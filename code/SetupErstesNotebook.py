@@ -26,3 +26,17 @@ def third_box(a,b):
         output.wrong("Du hast die Werte noch nicht getauscht!")
         return
     output.wrong("Die Werte von a und b wurden verändert, aber nicht getauscht.")
+
+
+def fourth_box(flaeche):
+    if flaeche == 60:
+        output.success("Richtig! Der Tippfehler ist behoben.")
+    else:
+        output.wrong("Das stimmt noch nicht. Lies die Fehlermeldung nochmal genau.")
+
+
+def fifth_box(begruessung, alter):
+    if begruessung == "Ich bin " + str(alter) + " Jahre alt.":
+        output.success("Super! Der TypeError ist behoben.")
+    else:
+        output.wrong("Das stimmt noch nicht. Lies die Fehlermeldung nochmal genau.")
