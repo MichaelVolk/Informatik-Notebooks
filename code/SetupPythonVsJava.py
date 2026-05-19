@@ -30,3 +30,23 @@ def check_for_schleife(summe):
         output.success("Richtig! Die Schleife liefert das korrekte Ergebnis.")
     else:
         output.wrong("Das Ergebnis stimmt nicht. Erwartet: 15, erhalten: " + str(summe))
+
+
+def check_arrays(zahlen, ungerade):
+    erwartete_zahlen = list(range(100))
+    erwartete_ungerade = list(range(1, 200, 2))
+
+    fehler = []
+
+    if zahlen == list(range(99)):
+        fehler.append("'zahlen' enthält nur die Zahlen 0–98. Denk daran, dass range(99) bei 0 startet und vor 99 aufhört – für die Zahlen 0–99 brauchst du range(100).")
+    elif zahlen != erwartete_zahlen:
+        fehler.append("'zahlen' hat nicht den richtigen Inhalt. Es sollen die Zahlen 0–99 enthalten sein.")
+
+    if ungerade != erwartete_ungerade:
+        fehler.append("'ungerade' hat nicht den richtigen Inhalt. Es sollen die ersten 100 ungeraden Zahlen (1, 3, 5, ..., 199) enthalten sein.")
+
+    if not fehler:
+        output.success("Beide Listen sind korrekt!")
+    else:
+        output.wrong("\n".join(fehler))
