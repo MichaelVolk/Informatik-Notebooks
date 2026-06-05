@@ -2,8 +2,8 @@ import template.output as output
 
 
 def get_spotify_daten():
-    songs = ["Blinding Lights", "Shape of You", "As It Was", "Cruel Summer", "Dance Monkey"]
-    streams = [4.3, 4.2, 3.2, 3.0, 2.8]
+    songs = ["Blindings lights", "Shape of You", "Sweater Weather", "Starboy", "As It Was"]
+    streams = [5443318332, 4944382666, 4652758344, 4572269955, 4449375500]
     return songs, streams
 
 
