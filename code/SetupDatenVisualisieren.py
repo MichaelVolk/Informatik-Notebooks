@@ -17,3 +17,9 @@ def get_freizeit_daten():
     aktivitaeten = ["Social Media", "Gaming", "Serien / Filme", "Sport", "Musik hören", "Sonstiges"]
     anteile = [28, 18, 17, 15, 14, 8]
     return aktivitaeten, anteile
+
+
+def get_gaming_daten():
+    stunden = [1, 2, 2, 3, 4, 4, 5, 5, 6, 7, 8, 9, 10]
+    highscores = [850, 1100, 1250, 1600, 1850, 2100, 2300, 2450, 2800, 3100, 3500, 3750, 4200]
+    return stunden, highscores
