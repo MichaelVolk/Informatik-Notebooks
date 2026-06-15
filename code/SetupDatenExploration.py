@@ -31,7 +31,7 @@ def lade_daten():
         'waldflaeche': [],
         'arbeitslosigkeit': [],
         'bildung_hochschule': [],
-        'demokatrie':[],
+        'demokratie':[],
         'säuglingssterblichkeit':[]
     }
 
