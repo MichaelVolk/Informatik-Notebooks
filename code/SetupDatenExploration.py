@@ -32,6 +32,7 @@ def lade_daten():
         'arbeitslosigkeit': [],
         'bildung_hochschule': [],
         'demokatrie':[],
+        'säuglingssterblichkeit':[]
     }
 
     with open(pfad, encoding='utf-8') as f:
@@ -53,6 +54,7 @@ def lade_daten():
             ergebnis['arbeitslosigkeit'].append(_bereinige_zahl(row['Unemployment rate']))
             ergebnis['bildung_hochschule'].append(_bereinige_zahl(row['Gross tertiary education enrollment (%)']))
             ergebnis['demokratie'].append(_bereinige_zahl(row['Democracy']))
+            ergebnis['säuglingssterblichkeit'].append(_bereinige_zahl(row['Infant mortality']))
 
     return ergebnis
 
