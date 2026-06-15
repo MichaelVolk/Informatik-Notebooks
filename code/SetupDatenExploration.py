@@ -31,6 +31,7 @@ def lade_daten():
         'waldflaeche': [],
         'arbeitslosigkeit': [],
         'bildung_hochschule': [],
+        'demokatrie':[],
     }
 
     with open(pfad, encoding='utf-8') as f:
@@ -51,6 +52,7 @@ def lade_daten():
             ergebnis['waldflaeche'].append(_bereinige_zahl(row['Forested Area (%)']))
             ergebnis['arbeitslosigkeit'].append(_bereinige_zahl(row['Unemployment rate']))
             ergebnis['bildung_hochschule'].append(_bereinige_zahl(row['Gross tertiary education enrollment (%)']))
+            ergebnis['demokratie'].append(_bereinige_zahl(row['Democracy']))
 
     return ergebnis
 
